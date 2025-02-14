@@ -17,4 +17,4 @@ let state= null
 //object
  console.log(typeof "apsar");
  console.log(typeof null);//object
- console.log(typeof undefined)//undefined
+ console.log(typeof undefined)//undefined 
