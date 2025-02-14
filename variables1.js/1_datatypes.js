@@ -9,7 +9,7 @@ let state= null
 
 //number==>2**53
 //bigint
-//string==>""
+//string==>"" 
 //boolean==>true/false
 //null==> standalone value
 //undefined==> value is not defined/given
