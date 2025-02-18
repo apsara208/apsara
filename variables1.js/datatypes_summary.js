@@ -25,3 +25,23 @@ const myFunction=function(){
     console.log("hellow world")
 }
 console.log(typeof myFunction)
+ 
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//memory stack(primitive), heap(Non primitive)
+let myNickName ="apps"
+let anothername="appu"
+anothername="kanxi"
+console.log(myNickName)
+console.log(anothername)
+
+let user={
+    email:"user@google.com", upi:"user@sby"
+}
+let user2=user
+user2.email="user2@gmail.com"
+console.log(user2.email)//"user2@gmail.com"
+console.log(user.email)//"user2@gmail.com"
+console.log(user.upi)
+console.log(user2.upi)
+//since the heap takes reference from the stack where the user variable is stored along with other variables like myNickName here 
