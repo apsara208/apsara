@@ -18,3 +18,22 @@ myArr.push(6)
 console.log(myArr)
 myArr.pop()
 console.log(myArr)
+myArr.unshift(0)//infront
+console.log(myArr)
+myArr.shift()//remove from front
+console.log(myArr)
+
+const Arr1=myArr.join()//converts the elements of the aray into string 
+//whcihc is no longer an array
+console.log(Arr1)
+console.log(typeof Arr1
+)
+ //slice and splice
+  console.log("a ",myArr)
+
+  const myn1=myArr.slice(1,4)//from 1 to 3rd
+console.log(myn1)
+console.log("o  ",myArr)
+const myn2=myArr.splice(1,4)//from 1 to 4th +pops them out too
+console.log(myn2)
+console.log("o  ",myArr)
