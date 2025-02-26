@@ -31,6 +31,10 @@ JsUser.greeting2=function(){
     console.log(`Hello user,${this.name}`)
 
 }
+JsUser.greeting3=
+'hi'//puts the data in
 console.log(JsUser.greeting())
 console.log(JsUser.greeting2())
+console.log(JsUser.greeting3)
+
 console.log(JsUser)
