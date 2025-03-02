@@ -5,7 +5,7 @@ console.log(balance)
 const day={morning:"good",
     noon:"sunny", night:"cold"
 }
-/*console.log(day)
+console.log(day)
 console.log(balance.toString())
 console.log(day.morning.toString())
 console.log(balance.toFixed(2))//rounds off after the decimal
@@ -13,12 +13,15 @@ console.log(balance.toFixed(2))//rounds off after the decimal
 
 const otherNumber =23.8966
 console.log(otherNumber.toFixed(2))
-console.log(otherNumber.toPrecision(2))//rounds off in this number of digits
+console.log(otherNumber.toPrecision(2))//rounds off in this number of digits //string as result 
+const checking=otherNumber.toPrecision(2)
+console.log(typeof checking)
 
 const hundreds =100000
 console.log(hundreds.toLocaleString())//commas in between according to the us standart of counting
 console.log(hundreds.toLocaleString('en-IN'))//commas acc to indian standard
-*/
+console.log(Math.round(hundreds))
+
 //+++++++++++++++++Maths++++++++++++++++++++++
 console.log(Math)//math is an object
 console.log(Math.abs(-4))//4,gives absolute value
