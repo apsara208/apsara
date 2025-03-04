@@ -48,3 +48,19 @@ console.log(Object.entries(tinderuser))//all three returns array
 console.log(tinderuser.hasOwnProperty("isLoggedIn"))
 //to check whether it exists int the object or not 
 //boolean output
+
+
+const course ={
+    cousename:"js in hindi",
+    price:999,
+    courseInstructor:"hitesh"
+}
+//course.courseInstructor
+const {courseInstructor}=course
+console.log(courseInstructor)
+
+/*const navbar=() => {
+
+}
+navbar(company="hitesh")  //some destructuring*/
+
