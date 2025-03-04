@@ -1,5 +1,5 @@
 //empty object
-//const tinderuser = new Object( // singleton object
+//const tinderuser = new Object( )// singleton object
 const tinderuser={}//non singleton object
 tinderuser.id="123abc"
 tinderuser.name="sam"
@@ -43,7 +43,7 @@ const users =[
 console.log(tinderuser)
 console.log(Object.keys(tinderuser))
 console.log(Object.values(tinderuser))
-console.log(Object.entries(tinderuser))
+console.log(Object.entries(tinderuser))//all three returns array
 //each entry or key-value pair is made into an array inside the array
 console.log(tinderuser.hasOwnProperty("isLoggedIn"))
 //to check whether it exists int the object or not 
