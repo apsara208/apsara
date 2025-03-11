@@ -33,7 +33,7 @@ let myNickName ="apps"
 let anothername="appu"
 anothername="kanxi"
 console.log(myNickName)
-console.log(anothername)
+console.log(anothername)//kanxi
 
 let user={
     email:"user@google.com", upi:"user@sby"

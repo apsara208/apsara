@@ -18,7 +18,7 @@ myArr.push(6)
 console.log(myArr)
 myArr.pop()
 console.log(myArr)
-myArr.unshift(0)//infront
+myArr.unshift(0)// add infront
 console.log(myArr)
 myArr.shift()//remove from front
 console.log(myArr)
