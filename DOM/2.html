@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>domm</title>
+</head>
+<body style="background-color: burlywood;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    <script>
+        // function addLanguage(LangName){
+        //     const li=document.createElement('li');
+        //     li.innerHTML = `${LangName}`
+        //     document.querySelector('.language').appendChild(li)
+        // }
+        // addLanguage('python')        
+        //addLanguage('c')
+        function addOptiLanguage(LangName){
+            const li =document.createElement('li');
+            li.appendChild(document.createTextNode(LangName))
+            document.querySelector('.language').appendChild(li)
+        }
+        addOptiLanguage('css')
+        //edit
+        const secondLang=document.querySelector("li:nth-child(2)")//2nd element not index
+        //first-child
+        //secondLang.innerHTMl
+        const newli= document.createElement('li')
+        newli.textContent="Mojo"
+        secondLang.replaceWith(newli)
+        //remove
+        const lastLang=document.querySelector('li:last-child')
+        lastLang.remove()
+
+    </script>
+</body>
+</html>
