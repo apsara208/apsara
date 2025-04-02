@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.312) ; color:rgb(224, 238, 250) ;">
+    <h2>Amazing images</h2>
+    <div>s
+        <ul id="images">
+            <li><img width="200px" id='photoshop' src="https://images.pexels.com/photos/30155560/pexels-photo-30155560/free-photo-of-australian-shepherd-playing-on-italian-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="photoshop">  </li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg" alt="japan" ></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/1179225/pexels-photo-1179225.jpeg?auto=compress&cs=tinysrgb&w=600" alt="river" ></li>
+            <li><img width="200px" id="Owl" src="https://images.pexels.com/photos/53977/eagle-owl-raptor-falconry-owl-53977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Owl" 
+               ></li>   <!-- onclick="alert('owl')" write after alt -->
+            <li><img width="200px" id="google" src="https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg?auto=compress&cs=tinysrgb&w=600" alt="googlepage"></li>
+            <li><a href="https://google.com" id="google">Google</a></li>
+        </ul>
+
+
+    </div>
+</body>
+<script> 
+//  document.getElementById('Owl').onclick=function(){
+//     alert("owl clicked")
+// } 
+
+// document.getElementById('Owl').addEventListener('click',function()
+//{alert('owl clicked')
+// },false)
+
+//false(here)==event propagation (event public-false, event capturing-true)
+
+//type ,timestamp,defaultprevented
+//target,toElement,srcElement,currentTarget.
+//clientX ,clientY,screenX,screenY
+//ltkey,ctrlkey,shiftkey,keycode
+
+document.getElementById('images').addEventListener('click',function(e)
+{ console.log("clicked inside the ul")
+ },false)
+document.getElementById('Owl').addEventListener('click',function(e)
+{alert('owl clicked')
+e.stopPropagation() // wont go above , only  owl click will be alerted
+ },false)
+ // propagation (false) bubble bottom to up,,, 
+ // first    owl clicked 
+ // then     clicked inside the ul
+ //  capturing (true) bubble  to bottom ,,, 
+ // first    clicked inside the ul
+ // then     owl clicked 
+
+document.getElementById('google').addEventListener
+('click', function(e){
+    console.log('google clicked');
+    e.preventDefault()
+    e.stopPropagation
+
+},false)
+
+
+</script>
+</html>
